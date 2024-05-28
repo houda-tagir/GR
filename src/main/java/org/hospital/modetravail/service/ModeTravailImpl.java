@@ -7,11 +7,15 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ModeTravailImpl implements ModeTravailService {
-    @Autowired
-    private ModeTravailRepository modeTravailRepository;
-    public void incrementModeTravail( String semaine, String jour){
+    @Override
+    public void incrementModeTravail(String semaine, String jour) {
+
+    }
+   /* @Autowired
+    private ModeTravailRepository modeTravailRepository;*/
+    /*public void incrementModeTravail( String semaine, String jour){
         ModeTravail modeTravail=new ModeTravail(null,semaine,jour);
         modeTravailRepository.save(modeTravail);
     }
-
+*/
 }
